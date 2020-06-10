@@ -7,8 +7,8 @@ class MetaYawProcessor(RegexProcessor):
     The yaw value gives the direction where the picture was taken.
     """
     def __init__(self,
-                phrase = b"<Camera:Yaw>(?:((?:\-?\d*)\.(?:\d*)))<\/Camera:Yaw>",
-                content)
+                content,
+                phrase = b"<Camera:Yaw>(?:((?:\-?\d*)\.(?:\d*)))<\/Camera:Yaw>"):
         RegexProcessor.__init__(self, phrase, content)
     
     def process():

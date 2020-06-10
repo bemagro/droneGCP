@@ -7,8 +7,8 @@ class MetaDfgProcessor(RegexProcessor):
     via regex extracts the distance from ground value.
     """
     def __init__(self,
-                phrase = b"<Camera:AboveGroundAltitude>(?:((?:\d*)\.(?:\d*))|(?:(\d*)\/(\d*)))<\/Camera:AboveGroundAltitude>",
-                content):
+                content,
+                phrase = b"<Camera:AboveGroundAltitude>(?:((?:\d*)\.(?:\d*))|(?:(\d*)\/(\d*)))<\/Camera:AboveGroundAltitude>"):
         RegexProcessor.__init__(self, phrase, content)
     
     def process():

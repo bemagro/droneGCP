@@ -10,8 +10,8 @@ class ExifProcessor(MetaProcessor):
     filepath - str, path to the jpg file
     """
     def __init__(self, filepath):
-        self.file = open(filepath, 'rgb')
-        self.load_tags()
+        self.file = open(filepath, 'rb')
+        self._load_tags()
 
     def _load_tags(self):
         self.tags = exifread.process_file(self.file)
