@@ -41,4 +41,4 @@ class MetaCoordProcessor(ExifProcessor):
         latitude = self._to_degrees(latitude)
         longitude = self._to_degrees(longitude)
 
-        return longitude, latitude
+        return latitude, longitude

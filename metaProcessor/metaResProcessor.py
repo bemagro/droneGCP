@@ -1,5 +1,4 @@
 from .exifProcessor import ExifProcessor
-from ..transformer.inchToCentimeter import InchToCentimeter
 
 class MetaResProcessor(ExifProcessor):
     """

@@ -8,3 +8,6 @@ from .metaYawProcessor import MetaYawProcessor
 from .metaDfgProcessor import MetaDfgProcessor
 
 from .metaResProcessor import MetaResProcessor
+from .metaAltitudeProcessor import MetaAltitudeProcessor
+from .metaAdjFocalProcessor import MetaAdjFocalProcessor
+from .metaFocalProcessor import MetaFocalProcessor
